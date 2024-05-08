@@ -26,8 +26,5 @@ jobs:
     - name: Run Docker container
       run: docker run --name test_container pyapp
 
-    - name: Copy test results from container
-      run: docker cp test_container:/app/test-reports/ ./test-reports
-
     - name: Cleanup
       run: docker rm -f test_container
