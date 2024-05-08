@@ -31,9 +31,3 @@ jobs:
 
     - name: Cleanup
       run: docker rm -f test_container
-
-    - name: Upload Test Results
-      uses: actions/upload-artifact@v2
-      with:
-        name: unittest-results
-        path: ./test-reports/
