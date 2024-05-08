@@ -4,6 +4,9 @@ from sqlalchemy.orm import sessionmaker, relationship, declarative_base
 
 Base = declarative_base()
 
+
+# TERST
+
 class User(Base):
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True)
